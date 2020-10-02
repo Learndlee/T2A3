@@ -1,0 +1,13 @@
+name: CI/CD
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  test_suite:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checout Branch
+      uses: actions/checkout@v2
+        
