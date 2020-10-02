@@ -25,7 +25,8 @@ mmMMmmmm...Value may be had - BUY, you should!"""
 
         # control if price has gone up, stock might be over priced - sell
         elif self.open_price < self.close_price:
-            return "mmMMmmmm...dark side is strong - SELL, i fear!"
+            return """mmMMmmmm...
+        dark side is strong - SELL, i fear!"""
 
     # method univerisally available, not tied to a class
     @staticmethod
