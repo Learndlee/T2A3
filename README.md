@@ -1,14 +1,24 @@
-         ___        ______     ____ _                 _  ___  
-        / \ \      / / ___|   / ___| | ___  _   _  __| |/ _ \ 
-       / _ \ \ /\ / /\___ \  | |   | |/ _ \| | | |/ _` | (_) |
-      / ___ \ V  V /  ___) | | |___| | (_) | |_| | (_| |\__, |
-     /_/   \_\_/\_/  |____/   \____|_|\___/ \__,_|\__,_|  /_/ 
- ----------------------------------------------------------------- 
+#T2A3 Assessment
+##Mark Lee
 
+This virtualised application will pull stock data from the internet and suggest an investing approach.
 
-Hi there! Welcome to AWS Cloud9!
+API call.
+Using Pandas_datareader to handle the api call to yahoo finance, the get request will pull the High, Low, Open, Close , Volume, and Adjusted Close prices from begining of financial year 2020 and assign it to the variable "df".
 
-To get started, create some files, play with the terminal,
-or visit https://docs.aws.amazon.com/console/cloud9/ for our documentation.
+Data export.
+data with today's(current date) date will be exported to file "stock_data.json".
 
-Happy coding!
+Class instances and methods
+A base class "Analysis" will have the following default attributes:
+    AUD currency
+    50 trust_level
+    5 days to execute
+    $10000 to invest
+
+it will instantiate itself with mandatory parameters o_price (Open price), c_price (close price)
+
+cidi document
+workflow
+
+mypy
